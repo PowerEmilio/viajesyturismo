@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    image-resolution: 1080px;
+    image-rendering: optimizeQuality;
+    image-resolution: 200dpi;
 }
 body{
     background-color: #111;
@@ -14,9 +15,9 @@ body{
 .navbar{
     width: 100%;
     height: 400px;
-    background: url(img/paisaje3.jpg);
-    /* background-attachment: fixed; */
-    background-size: cover;
+    background: linear-gradient(to right, rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url(img/paisaje3.jpg);
+    /*background-attachment: fixed;
+    */background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -58,7 +59,7 @@ body{
 /*#region animaciones del navbar*/
 
 .navbar:hover{
-    background: linear-gradient(to right, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6)), url(img/paisaje3.jpg);
+    background: linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)), url(img/paisaje3.jpg);
     /* background-attachment: fixed; */
     background-size: cover;
 }
@@ -191,10 +192,10 @@ body{
     flex-direction: row;
 }
 .destino__recomendado1{
-    width: 50vw;
+    width: 50%;
 }
 .destino__recomendado2{
-    width: 50vw;
+    width: 50%;
 }
 
 
@@ -202,15 +203,15 @@ body{
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
    width: 50%;
    position: relative;
-   left: 20px;
-   top: 20px;
+   /* left: 20px;
+   top: 20px; */
 }
 .place__image2{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
     width: 50%;
    position: relative;
-   left: -20px;
-   top: 20px;
+   /* left: -20px;
+   top: 20px; */
 
 }
 .img{
@@ -276,17 +277,22 @@ body{
         /*width: 70%;
         */font-size: 3rem;
         margin: 0;
-        transform: translateX(150vw);
-        -webkit-transform: translateX(150vw);
-        -moz-transform: translateX(150vw);
-        -ms-transform: translateX(150vw);
-        -o-transform: translateX(150vw);
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
 } 
     .list{
         justify-content: center;
         align-self: center;
         flex-wrap: wrap;
-    }
+        transform: translate(0vw);
+        -webkit-transform: translate(0vw);
+        -moz-transform: translate(0vw);
+        -ms-transform: translate(0vw);
+        -o-transform: translate(0vw);
+}
 
 
     .section{
@@ -299,14 +305,14 @@ body{
     }
     .place__image1, .place__image2{
         clip-path: none;
-        width: 90vw;
+        width: 90%;
         top: 0;
         left: 0;
         display: block;
         margin: auto;
     }
     .destino__recomendado1, .destino__recomendado2{
-        width: 100vw;
+        width: 100%;
     }
     .destinos__recomendados{
         display: flex;

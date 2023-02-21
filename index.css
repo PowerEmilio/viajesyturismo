@@ -125,7 +125,7 @@ body {
 
 /*#endregion navbar*/
 
-/*! TODO EL BODY*/
+/*! MAIN 1*/
 /*#region main*/
 
 .main {
@@ -178,13 +178,13 @@ body {
 
 /*#endregion main*/
 
+/*! MAIN 2*/
 /*#region main2*/
 
 /*#region Recomendados*/
 
 .main2 {
   width: 100%;
-  height: 1000px;
   margin: 0;
   padding: 0;
 }
@@ -291,7 +291,7 @@ body {
   background-size: cover;
   background-position: 70%;
 }
-.card:nth-child(5){
+.card1:nth-child(5){
   background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 50%), url(img/Destinos/estadosUnidos.jpg);
   background-size: cover;
   background-position: 50%;
@@ -423,6 +423,24 @@ body {
 
 /*#endregion Otros*/
 
+/*#endregion main2*/
+
+/*! FOOOTER*/
+/*#region Footer*/
+
+/* .footer{
+  width: 100%;
+  height: 300px;
+  border-top: solid 5px #d6d600;
+}
+.footerDescription{
+  color: #dbdbdb;
+  font-weight: bold;
+}
+ */
+
+/*#endregion Footer*/
+
 /*! MEDIA QUERY*/
 /*#region MediaQuerys*/ 
 
@@ -456,7 +474,9 @@ body {
     width: 800px;
     height: 500px;
     margin: 20px;
-
+  }
+  .description{
+    font-size: 2rem;
   }
 
   /*#endregion otrosDestinos*/
@@ -553,9 +573,12 @@ body {
     margin: 20px;
     display: flex;
   }
-
+  .card{
+    width: 90%;
+  }
   /*#endregion otrosDestinos*/
 
 }
 
 /*#endregion MediaQuerys*/
+
